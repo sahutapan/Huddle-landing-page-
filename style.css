@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding: 0;
+    color: aliceblue;
+    box-sizing: border-box;
+    /* flex-wrap: wrap; */
+}
+
+body{
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(257, 40%, 49%);
+    background-position: top;
+}
+header img{
+margin: 1rem 0 1rem 1rem;
+width: 10em;
+}
+.illustration{
+    margin: 1rem 1rem 1rem 1rem;
+   width:80%;
+}
+.illustration-container{
+display: flex;
+justify-content: center;
+}
+.Heading{
+    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+    margin: 1.3rem 1.3rem 0.5rem 1.3rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.desc{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center; 
+    font-weight: 400;
+    margin: 0 1.3rem 1rem 1.3rem;
+    font-size: 0.7rem; 
+}
+.register-btn{
+    color: hsl(257, 40%, 49%);
+    border: none;
+    display: block;
+    width: 70%;
+    height: 2rem;
+    border-radius: 100px;
+    font-weight: 500;
+    margin: auto;
+    cursor: pointer;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+.fa-brands{
+    border: 1px solid #ffffff;
+    color:#fff;
+    padding: 5px;
+    width: 30px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    
+}
+.social-media-icon{
+    text-decoration: none;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+
+    background-color: #ffffff;
+}
+.register-btn:hover{
+    color: #ffff;
+    background-color: hsl(300, 69%, 71%);
+}
+.fa-brands:hover{
+    color:hsl(300,69%,71%);
+    border-color: hsl(300, 69%, 71%);
+}
+@media only screen and (min-width: 768px) {
+    /* for desktop */ 
+    body{
+        background-image: url(images/bg-desktop.svg);
+        /* height: fit-content; */
+        margin: 2rem;
+    }
+    header img{
+        width: 13rem;
+    }
+    .illustration{
+       width:auto;
+       height: 66vh;
+       
+       margin-left: 2rem;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .Heading{
+        text-align: left;
+        font-size: 3rem;
+        margin: 2rem;
+        font-weight: 600;
+        
+    }
+    .desc{
+        font-size: 1rem;
+        text-align: left;
+      margin-left: 2rem;
+    }
+    .register-btn{
+        margin: 2rem 0 0 2rem;
+        width: 150px;
+        height: 35px;
+    }
+    .social-media{
+        justify-content: right;
+        margin:1rem;
+        gap:2rem;
+    }
+} 
+
+.attribution { font-size: 15px; text-align: center; color:hsl(257, 40%, 49%);}
+.attribution a { color: hsl(0, 0%, 0%); }
